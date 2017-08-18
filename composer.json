@@ -1,5 +1,5 @@
 {
-    "name": "smartjson/ip-location-zh",
+    "name": "smartjson/ips-location-zh",
     "description": "ipip.net resource, Fetch provincial information via IP.",
     "keywords": ["ip", "location", "chinese", "china"],
     "type": "library",
