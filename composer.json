@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "smartJson\\IpLocationZh\\": "src/"
+            "SmartJson\\IpLocationZh\\": "src/"
         }
     },
     "minimum-stability": "stable",
