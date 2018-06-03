@@ -11,7 +11,7 @@ namespace SmartJson\IpLocationZh;
     Code for PHP 5.3+ only!
 */
 
-class IPHigh
+class IPHigher
 {
     private static $ip = NULL;
 
