@@ -7,8 +7,6 @@ class IP
     private static $ip = NULL;
 
     private static $fp = NULL;
-    private static $offset = NULL;
-    private static $index = NULL;
 
     public static function find($ip, $language = 'CN')
     {
@@ -42,18 +40,15 @@ class IP
 
     private static function init()
     {
-        $baseStation = new BaseStation(__DIR__ . '/ipipfree.ipdb');
-        return $baseStation;
-    }
+        try {
 
-    public function __destruct()
-    {
-        if (self::$fp !== NULL) {
-            fclose(self::$fp);
+            $ipdb_file = __DIR__ . '/ipipfree.ipdb';
 
-            self::$fp = NULL;
+            return new BaseStation($ipdb_file);
+
+        } catch (\Exception $exception) {
+            throw new \Exception("IPIP DB NOT EXISTS.");
         }
     }
-}
 
-?>
+}
