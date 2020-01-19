@@ -20,7 +20,6 @@ array:4 [
    0 => "中国"
    1 => "上海"
    2 => "上海"
-   3 => ""
  ]
 ```
 
@@ -29,9 +28,9 @@ array:4 [
 # General Usage:
 use SmartJson/IpLocationZh;
 
-Ip::find('ip address') OR Ip::find(Request::getClientIp()); // dat file
+Ip::find('ip address') OR Ip::find(Request::getClientIp());
+Ip::findInfo('ip address') OR Ip::find(Request::getClientIp());
+Ip::findMap('ip address') OR Ip::find(Request::getClientIp());
 
-# Higher Usage (faster):
-IPHigher::find('ip address') OR Ip::find(Request::getClientIp()); // this command used datx file
 ```
 ##License MIT
